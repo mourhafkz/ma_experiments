@@ -3,7 +3,10 @@
 ## Content
 ## Reproduction step by step:
 #### 1 - Install docker desktop https://www.docker.com/products/docker-desktop/
-#### 2 - Install Kaldi from the image using the command: docker pull kaldiasr/kaldi
+#### 2 - Install Kaldi from the image using the command: 
+```sh
+docker pull kaldiasr/kaldi
+```
 #### 3 - Pull this github https://github.com/zeroQiaoba/ivector-xvector . It's an project that tagets and converts KALDI ark files to npz and it is built on the sre16 KALDI recipe.
 ### 4 - To extract i-vectors: 
 * put your data in the wav folder. only wav extension. 
