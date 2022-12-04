@@ -6,27 +6,27 @@
 #### 2 - Install Kaldi from the image using the command: docker pull kaldiasr/kaldi
 #### 3 - Pull this github https://github.com/zeroQiaoba/ivector-xvector . It's an project that tagets and converts KALDI ark files to npz and it is built on the sre16 KALDI recipe.
 ### 4 - To extract i-vectors: 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 - put your data in the wav folder. only wav extension. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 - download and copy this model https://drive.google.com/drive/folders/1a4ogw6AZ8sZCQ_IY6ANGeIcnhdtPVtOX to the model_3000h folder
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3 - in path.sh modify kaldi root as such 
+* put your data in the wav folder. only wav extension. 
+* download and copy this model https://drive.google.com/drive/folders/1a4ogw6AZ8sZCQ_IY6ANGeIcnhdtPVtOX to the model_3000h folder
+* in path.sh modify kaldi root as such 
 export KALDI_ROOT=/opt/kaldi
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4 - in the console, navigate to the folder in step 3 on your machine
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5 -  load the image with volume extractor folder using:
+* in the console, navigate to the folder in step 3 on your machine
+* load the image with volume extractor folder using:
 docker run --volume ${PWD}/<folder name>/:/opt/vectors/ -it kaldiasr/kaldi 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6 - navigate to opt/vectors/ivector using
+* 6 - navigate to opt/vectors/ivector using
 cd .. 
 cd vectors/ivector
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7 - link these necessary folders from recipe sre16 v1
+* 7 - link these necessary folders from recipe sre16 v1
 ln -s /opt/kaldi/egs/sre16/v1/steps ./
 ln -s /opt/kaldi/egs/sre16/v1/sid ./
 ln -s /opt/kaldi/egs/sre16/v1/utils ./
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8 - run extractor with the name of the data folder. in this case, it is wav
+* 8 - run extractor with the name of the data folder. in this case, it is wav
 bash enroll.sh wav
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9 - convert ark files to txt
+* 9 - convert ark files to txt
 /opt/kaldi/src/bin/copy-vector ark:/opt/vectors/ivector/data/feat/ivectors_enroll_mfcc/ivector.1.ark ark,t:- >ivector.txt
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 10 - run npz_csv_extract.py after changing the path inside it and define the vec-type as 'i'
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11 - your csv file should include 401 columns (400d + filenames). Change the filenames to unified labels. 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12 - use the notebook to test the ivectors with SVM
+* 10 - run npz_csv_extract.py after changing the path inside it and define the vec-type as 'i'
+* 11 - your csv file should include 401 columns (400d + filenames). Change the filenames to unified labels. 
+* 12 - use the notebook to test the ivectors with SVM
 
 ### 5 - To extract x-vectors: 
   ##### 1 - put your data in the wav folder. only wav extension. 
