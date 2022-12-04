@@ -91,6 +91,7 @@ bash enroll.sh wav 1
 - Data: french (15000 recordings) + spanish(15000 recordings) + italian(15000 recordings)
 - Source: common voice
 - result:
+![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/vectors_fr_es_it_15000_records.png?raw=true)
 
 #### Experiment 3: Three Accents with considerable ammount of data but short duration
 - Data: arabic gulf, levantine, and egyptian (3 seconds/ 388 recordings each)
