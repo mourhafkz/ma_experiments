@@ -1,6 +1,5 @@
 ## X-Vector and I-Vector comparison based on the KALDI implementation
 
-## Content
 ## Reproduction step by step:
 #### 1 - Install docker desktop https://www.docker.com/products/docker-desktop/
 #### 2 - Install Kaldi from the image using the command: 
