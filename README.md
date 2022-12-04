@@ -84,7 +84,7 @@ bash enroll.sh wav 1
 #### Experiment 1: Two languages from different families
 - Data: 15000 arabic recordings + 15000 english recordings
 - Source: common voice
-- result:
+- result: ![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/image.jpg?raw=true)
 
 
 #### Experiment 2: Three closely related languages
