@@ -9,21 +9,33 @@
 * put your data in the wav folder. only wav extension. 
 * download and copy this model https://drive.google.com/drive/folders/1a4ogw6AZ8sZCQ_IY6ANGeIcnhdtPVtOX to the model_3000h folder
 * in path.sh modify kaldi root as such 
+```sh
 export KALDI_ROOT=/opt/kaldi
+```
 * in the console, navigate to the folder in step 3 on your machine
 * load the image with volume extractor folder using:
+```sh
 docker run --volume ${PWD}/<folder name>/:/opt/vectors/ -it kaldiasr/kaldi 
-* 6 - navigate to opt/vectors/ivector using
+```
+* navigate to opt/vectors/ivector using
+```sh
 cd .. 
 cd vectors/ivector
-* 7 - link these necessary folders from recipe sre16 v1
+```
+* link these necessary folders from recipe sre16 v1
+```sh
 ln -s /opt/kaldi/egs/sre16/v1/steps ./
 ln -s /opt/kaldi/egs/sre16/v1/sid ./
 ln -s /opt/kaldi/egs/sre16/v1/utils ./
-* 8 - run extractor with the name of the data folder. in this case, it is wav
+```
+* run extractor with the name of the data folder. in this case, it is wav
+```sh
 bash enroll.sh wav
-* 9 - convert ark files to txt
+```
+* convert ark files to txt
+```sh
 /opt/kaldi/src/bin/copy-vector ark:/opt/vectors/ivector/data/feat/ivectors_enroll_mfcc/ivector.1.ark ark,t:- >ivector.txt
+```
 * 10 - run npz_csv_extract.py after changing the path inside it and define the vec-type as 'i'
 * 11 - your csv file should include 401 columns (400d + filenames). Change the filenames to unified labels. 
 * 12 - use the notebook to test the ivectors with SVM
