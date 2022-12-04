@@ -44,7 +44,7 @@ bash enroll.sh wav
 * use the notebook to test the ivectors with SVM
 
 ### 5 - To extract x-vectors: 
-* 1 - put your data in the wav folder. only wav extension. 
+* put your data in the wav folder. only wav extension. 
 * download and copy this model http://www.kaldi-asr.org/models/m3 to the exp folder
 * in path.sh modify kaldi root as such 
 ```sh
