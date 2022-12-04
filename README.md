@@ -5,7 +5,7 @@
 #### 1 - Install docker desktop https://www.docker.com/products/docker-desktop/
 #### 2 - Install Kaldi from the image using the command: docker pull kaldiasr/kaldi
 #### 3 - Pull this github https://github.com/zeroQiaoba/ivector-xvector . It's an project that tagets and converts KALDI ark files to npz and it is built on the sre16 KALDI recipe.
-#### 4 - To extract i-vectors: 
+### 4 - To extract i-vectors: 
 ##### 1 - put your data in the wav folder. only wav extension. 
 ##### 2 - download and copy this model https://drive.google.com/drive/folders/1a4ogw6AZ8sZCQ_IY6ANGeIcnhdtPVtOX to the model_3000h folder
 ##### 3 - in path.sh modify kaldi root as such 
@@ -28,7 +28,7 @@ bash enroll.sh wav
 ##### 11 - your csv file should include 401 columns (400d + filenames). Change the filenames to unified labels. 
 ##### 12 - use the notebook to test the ivectors with SVM
 
-#### 5 - To extract x-vectors: 
+### 5 - To extract x-vectors: 
 ##### 1 - put your data in the wav folder. only wav extension. 
 ##### 2 - download and copy this model http://www.kaldi-asr.org/models/m3 to the exp folder
 ##### 3 - in path.sh modify kaldi root as such 
