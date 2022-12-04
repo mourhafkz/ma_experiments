@@ -85,24 +85,24 @@ bash enroll.sh wav 1
 
 
 #### Experiment 2: Three closely related languages
-##### Data: french (15000 recordings) + spanish(15000 recordings) + italian(15000 recordings)
-##### Source: common voice
-##### result:
+- Data: french (15000 recordings) + spanish(15000 recordings) + italian(15000 recordings)
+- Source: common voice
+- result:
 
 #### Experiment 3: Three Accents with considerable ammount of data but short duration
-##### Data: arabic gulf, levantine, and egyptian (3 seconds/ 388 recordings each)
-##### Source:
-##### result:
+- Data: arabic gulf, levantine, and egyptian (3 seconds/ 388 recordings each)
+- Source:
+- result:
 
 #### Experiment 4: Three Accents with small ammount of data and short duration 
-##### Data: arabic gulf, levantine, and egyptian (3 seconds/ 47 recordings each)
-##### Source:
-##### result:
+- Data: arabic gulf, levantine, and egyptian (3 seconds/ 47 recordings each)
+- Source:
+- result:
 
 
 #### Experiment 5: Three Accents with small ammount of data but longer duration 
-##### Data: arabic gulf, levantine, and egyptian (7 seconds/ 47 recordings each)
-##### Source:
-##### result:
+- Data: arabic gulf, levantine, and egyptian (7 seconds/ 47 recordings each)
+- Source:
+- result:
 
   
