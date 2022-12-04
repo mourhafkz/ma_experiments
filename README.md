@@ -6,7 +6,7 @@
 ```sh
 docker pull kaldiasr/kaldi
 ```
-#### 3 - Pull this github https://github.com/zeroQiaoba/ivector-xvector . It's an project that tagets and converts KALDI ark files to npz and it is built on the sre16 KALDI recipe.
+#### 3 - Pull this github https://github.com/zeroQiaoba/ivector-xvector . It's a project that tagets and extract KALDI ark files. It is built on the sre16 KALDI recipe.
 ### 4 - To extract i-vectors: 
 * put your data in the wav folder. only wav extension. 
 * download and copy this model https://drive.google.com/drive/folders/1a4ogw6AZ8sZCQ_IY6ANGeIcnhdtPVtOX to the model_3000h folder
