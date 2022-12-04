@@ -93,19 +93,19 @@ bash enroll.sh wav 1
 - result:
 ![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/vectors_fr_es_it_15000_records.png?raw=true)
 
-#### Experiment 3: Three Accents with considerable ammount of data but short duration
+#### Experiment 3: Three Accents with considerable amount of data but short duration
 - Data: arabic gulf, levantine, and egyptian (3 seconds/ 388 recordings each)
 - Source:
 - result:
 
-#### Experiment 4: Three Accents with small ammount of data and short duration 
+#### Experiment 4: Three Accents with small amount of data and short duration 
 - Data: arabic gulf, levantine, and egyptian (3 seconds/ 47 recordings each)
 - Source:
 - result:
 ![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/vectors_lev_egy_gulf_3seconds_47_records.png?raw=true)
 
 
-#### Experiment 5: Three Accents with small ammount of data but longer duration 
+#### Experiment 5: Three Accents with small amount of data but longer duration 
 - Data: arabic gulf, levantine, and egyptian (7 seconds/ 47 recordings each)
 - Source:
 - result: 
