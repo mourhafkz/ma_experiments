@@ -97,6 +97,7 @@ bash enroll.sh wav 1
 - Data: arabic gulf, levantine, and egyptian (3 seconds/ 388 recordings each)
 - Source:
 - result:
+![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/vectors_lev_egy_gulf_3seconds_388_records.png?raw=true)
 
 #### Experiment 4: Three Accents with small amount of data and short duration 
 - Data: arabic gulf, levantine, and egyptian (3 seconds/ 47 recordings each)
