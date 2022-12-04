@@ -84,7 +84,7 @@ bash enroll.sh wav 1
 - Data: 15000 arabic recordings + 15000 english recordings
 - Source: common voice
 - result: 
-
+![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/results_pics/vectors_ar_en_15000_records.png?raw=true)
 
 #### Experiment 2: Three closely related languages
 - Data: french (15000 recordings) + spanish(15000 recordings) + italian(15000 recordings)
