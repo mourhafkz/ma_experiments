@@ -29,8 +29,8 @@ bash enroll.sh wav
 ##### 12 - use the notebook to test the ivectors with SVM
 
 ### 5 - To extract x-vectors: 
-##### 1 - put your data in the wav folder. only wav extension. 
-##### 2 - download and copy this model http://www.kaldi-asr.org/models/m3 to the exp folder
+  ##### 1 - put your data in the wav folder. only wav extension. 
+  ##### 2 - download and copy this model http://www.kaldi-asr.org/models/m3 to the exp folder
 ##### 3 - in path.sh modify kaldi root as such 
 export KALDI_ROOT=/opt/kaldi
 ##### 4 - in the console, navigate to the folder in step 3 on your machine
@@ -54,22 +54,31 @@ bash enroll.sh wav 1
 
 
 ## Results
-#### Experiment 1:
-##### Data:
+#### Experiment 1: Two languages from different families
+##### Data: 15000 arabic recordings + 15000 english recordings
+##### Source: common voice
 ##### result:
 
 
-#### Experiment 2:
-##### Data:
+#### Experiment 2: Three closely related languages
+##### Data: french (15000 recordings) + spanish(15000 recordings) + italian(15000 recordings)
+##### Source: common voice
+##### result:
+
+#### Experiment 3: Three Accents with considerable ammount of data but short duration
+##### Data: arabic gulf, levantine, and egyptian (3 seconds/ 388 recordings each)
+##### Source:
+##### result:
+
+#### Experiment 4: Three Accents with small ammount of data and short duration 
+##### Data: arabic gulf, levantine, and egyptian (3 seconds/ 47 recordings each)
+##### Source:
 ##### result:
 
 
-#### Experiment 3:
-##### Data:
+#### Experiment 5: Three Accents with small ammount of data but longer duration 
+##### Data: arabic gulf, levantine, and egyptian (7 seconds/ 47 recordings each)
+##### Source:
 ##### result:
 
-
-#### Experiment 4:
-##### Data:
-##### result:
-
+  
