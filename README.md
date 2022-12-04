@@ -84,7 +84,7 @@ bash enroll.sh wav 1
 #### Experiment 1: Two languages from different families
 - Data: 15000 arabic recordings + 15000 english recordings
 - Source: common voice
-- result: ![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/image.jpg?raw=true)
+- result: 
 
 
 #### Experiment 2: Three closely related languages
@@ -106,6 +106,6 @@ bash enroll.sh wav 1
 #### Experiment 5: Three Accents with small ammount of data but longer duration 
 - Data: arabic gulf, levantine, and egyptian (7 seconds/ 47 recordings each)
 - Source:
-- result:
+- result: ![alt text](https://github.com/mourhafkz/ma_experiments/blob/main/vectors_lev_egy_gulf_7seconds_47_records.png?raw=true)
 
   
